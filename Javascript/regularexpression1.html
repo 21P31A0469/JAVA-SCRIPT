@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>Regular Expressions</h2>
+	<input type="text" name=""id="in_id">
+	<!-- <button onclick="check_numornot()">check validty</button> -->
+	<button onclick="check_charactersornot()"></button>
+	<br>
+	<span id="msg_id"></span>
+	<script type="text/javascript">
+		function check_numornot(){
+			// re=/^[0-9]{10}$/
+			re=/^[8][0-9]{9}$/  //starting number is 8 only
+			let n=document.getElementById('in_id').value;
+			output=re.test(n); //correct(by $)
+			if(output==true){
+				document.getElementById('msg_id').innerText='correct';
+				document.getElementById('msg_id').style.color='blue';
+
+			}else{
+				document.getElementById('msg_id').innerText='Please Enter correct format';
+				document.getElementById('msg_id').style.color='red';
+			}
+
+
+
+		}
+		
+
+
+
+
+	</script>
+
+</body>
+</html>

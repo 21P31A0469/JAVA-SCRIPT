@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>functions</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	//keyword functionname(arg1,arg2,.....,argn){
+     	//statements
+     	//return--optional
+     //}
+     	//normal function with no argunents
+     	function test(){
+     		document.write("test");
+     	}
+     	//test()
+     	//function with one argument
+     	function getname(name){
+     		document.write(name)
+     	}
+     	//getname('sim')
+     	//var id=prompt("enter your id")
+        function getrollnobyenter(rollno){
+        	document.write(rollno); 
+        }
+        //getrollnobyenter(id)
+        //function with 2 arguments
+        function sum(num1=0,num2=0){
+        	document.write(num1+num2)
+        }
+        //sum()
+        function sum(n){
+        	document.write(n**4)
+        }
+        //sum(5)
+        //anonymous function is a function without having function name
+        var output=function abc(num){
+            return(num*10)
+        }
+        //document.write(output(2))
+        //arrow functions=>
+        //no function keyword
+        //after function name keep with=
+        //after paranthesis use with=>
+       //mul=(num1,num2)=>{
+    	//document.write(num1*num2);
+    //}
+    //mul(2,5)
+    //arrow function with one argument
+    //getid=(rollno)=>{ or
+    	//getid=rollno=>{
+    		//document.write(rollno)
+    	//}
+    	//getid(22)
+    	//arrow function with no arguments
+    	//test=()=>{ or
+    	//test=_=>{
+    		//document.write("testing...")
+    	//}
+    	//test()
+    	//settimeout() function
+    	//callback function is a function as an argument inside the another function
+         setTimeout(test1,2000)
+         function test1(){
+         	document.write("execute after 2 secs")
+         }
+     </script>
+    
+    
+</body>
+</html>

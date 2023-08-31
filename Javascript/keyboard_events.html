@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task</title>
+	<style type="text/css">
+		.bred{
+			border:1px solid red;
+		}
+		input{outline:none;}
+	</style>
+</head>
+<body>
+     <label>Enter Name</label>
+     <input type="text" onkeyup="sample(this.value)" id="ins_id">
+     <br>
+     <span id="sp_id"></span>
+     <script type="text/javascript">
+     	function sample(str){
+     		if(str.length <4){
+     			//alert("please enter the name")
+     			// let a=document.getElementById('sp_id');
+     			// a.innerText="please enter your name";
+     			// a.style.color="blue";
+     			document.getElementById('ins_id').style.border='1px solid red';
+     			document.getElementById('sp_id').innerText='please enter your name';
+     	        document.getElementById('sp_id').style.color='red';
+     	}
+     	else{
+     		document.getElementById('ins_id').style.border='1px solid black';
+     		document.getElementById('sp_id').innerText=''
+     	}
+     }
+     </script>
+</body>
+</html>

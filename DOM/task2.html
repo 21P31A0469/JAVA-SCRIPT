@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task</title>
+</head>
+<h1>Task</h1>
+<body>
+     <table border="1" cellpadding="3">
+     	<tbody>
+     	<tr>
+     		<td></td>
+     		<td></td>
+     		<td></td>
+     	</tr>
+     	<tr>
+     		<td></td>
+     		<td></td>
+     		<td></td>
+     	</tr>
+  
+     	<tr>
+     		<td></td>
+     		<td></td>
+     		<td></td>
+     	</tr>
+       </tbody>
+     </table>
+     <script type="text/javascript">
+     	let all_tds=document.getElementsByTagName('td');
+     
+     	for (var i=0;i<all_tds.length;i++){
+     		all_tds[i].innerText=all_tds.length-i;
+     	
+     	}
+
+     </script>
+</body>
+</html>

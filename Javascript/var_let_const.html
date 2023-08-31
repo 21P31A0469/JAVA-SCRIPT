@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>var,let and const</title>
+</head>
+<body>
+     <h1>Declaring the variables</h1>
+     <script type="text/javascript">
+     	//global scope variable
+     	var a=10;
+     	//document.write(a);
+     	let b=20;
+     	//let b=30;wrong//redeclaration is not possible
+     	b=30;//re initialisation is possible
+     	//document.write(b);
+     	//block scope variable
+     	{
+     		let name1='lalli';
+            //document.write(name1);
+     	}
+     	//document.write(name1);
+     	const pi=3.14;
+     	//pi=4.23;
+     	//document.write(pi);
+     	const atm_card_number=123456;
+     	document.write(atm_card_number);
+     </script>
+ </body>
+</html>

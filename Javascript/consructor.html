@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructive</title>
+</head>
+<body>
+	<h1>constructor class</h1>
+<script type="text/javascript">
+	class Student{
+		constuctor(rno,fname,lname,clg){
+			this.rollno=rno;
+			this.firstname=fname;
+			this.lastname=lname;
+			this.college=clg;
+		}
+	}
+	let obj1 = new Student(1234,'ravi','kumar','AEC')
+	console.log(obj1.rollno,obj1.firstname,obj1.lastname,obj1.college)
+	let obj2 = new Student(4444,'lalli','swapna','ACET')
+	console.log(obj2.rollno,obj2.firstname,obj2.lastname,obj2.college)
+</script>
+</body>
+</html>
